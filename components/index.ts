@@ -1,5 +1,7 @@
 import TestScrollAnimation from "./shared/TestScrollAnimation";
+
 import Switch from "./ui/Switch";
+import TextLogo from "./ui/TextLogo";
 
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
@@ -15,6 +17,7 @@ import ProjectSection from "./sections/projects/ProjectSection";
 
 export {
   Switch,
+  TextLogo,
   TestScrollAnimation,
   ThemeButton,
   ThemeSwitch,
