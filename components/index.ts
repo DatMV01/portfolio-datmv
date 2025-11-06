@@ -2,6 +2,7 @@ import TestScrollAnimation from "./shared/TestScrollAnimation";
 
 import Switch from "./ui/Switch";
 import TextLogo from "./ui/TextLogo";
+import Card from "./ui/Card";
 
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
@@ -21,6 +22,7 @@ import ScrollSpyNav from "./nav/ScrollSpyNav";
 export {
   Switch,
   TextLogo,
+  Card,
   TestScrollAnimation,
   ThemeButton,
   ThemeSwitch,

@@ -33,7 +33,7 @@ const Container = ({
       : "max-w-[1320px]";
 
   return (
-    <Comp className={clsx("mx-auto w-full px-4", maxWidth, className)} id={id}>
+    <Comp className={clsx("mx-auto w-full px-4 md:px-12", maxWidth, className)} id={id}>
       {children}
     </Comp>
   );

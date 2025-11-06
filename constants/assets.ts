@@ -11,7 +11,7 @@ import project8 from "@/public/images/project8.jpg";
 import project9 from "@/public/images/project9.jpg";
 import avatar from "@/public/images/avatar.png";
 
-import applause from "@/public/assets/icons8-applause-64.png";
+import handClap from "@/public/assets/hand-clap.png";
 import aws from "@/public/assets/icons8-aws-96.png";
 import docker from "@/public/assets/icons8-docker-96.png";
 import facebook from "@/public/assets/icons8-facebook-96.png";
@@ -48,7 +48,7 @@ const images = {
 };
 
 const icons = {
-  applause,
+  handClap,
   aws,
   docker,
   facebook,

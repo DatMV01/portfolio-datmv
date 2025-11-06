@@ -19,7 +19,7 @@ export default function Main() {
       </main>
       <Footer />
 
-      <ScrollSpyNav />
+      <ScrollSpyNav offset={70}/>
     </Fragment>
   );
 }
