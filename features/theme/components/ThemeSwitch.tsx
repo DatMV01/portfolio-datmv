@@ -18,7 +18,7 @@ const ThemeSwitch = () => {
       checked={checked}
       onChange={() => changeTheme(theme === "light" ? "dark" : "light")}
       className={`${checked ? " [&>span]:bg-zinc-900 bg-zinc-700 text-white" : ""}`}
-      size="lg"
+      size="xl"
       icon={icon}
     />
   );

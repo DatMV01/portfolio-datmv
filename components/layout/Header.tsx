@@ -11,7 +11,7 @@ const LeftHeader = () => {
         src={assets.images.avatar}
         className="w-12 h-12 rounded-full object-cover object-[50%_20%]"
       />
-      <TextLogo className="absolute top-1/2 left-25 -translate-x-1/2 -translate-y-1/2" />
+      <TextLogo className="absolute top-1/2 left-27 -translate-x-1/2 -translate-y-1/2" />
     </Link>
   );
 };
@@ -25,7 +25,8 @@ const Header = () => {
     >
       <div className="flex h-16 items-center justify-between">
         <LeftHeader />
-        <TopNav   offset={70} />
+        
+        <TopNav offset={70} />
 
         <ThemeSwitch />
       </div>
