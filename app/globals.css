@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "../features/theme/styles/theme.css";
+@import "../styles/animate.css";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-ovo: var(--font-ovo);
+}

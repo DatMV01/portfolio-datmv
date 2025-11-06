@@ -1,0 +1,96 @@
+/* ------------------ KEYFRAMES ------------------ */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------------------ ANIMATION UTILITIES ------------------ */
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-fadeOut {
+    animation: fadeOut 0.8s ease-out forwards;
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 0.9s ease-out forwards;
+  }
+
+  .animate-fadeInLeft {
+    animation: fadeInLeft 0.9s ease-out forwards;
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
+    transform-origin: center;
+  }
+
+  /* Delay Utilities */
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+  .animate-delay-700 {
+    animation-delay: 700ms;
+  }
+  .animate-delay-1000 {
+    animation-delay: 1000ms;
+  }
+}
