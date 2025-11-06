@@ -4,6 +4,7 @@ import {
   AboutSection,
   ProjectSection,
   ContactSection,
+  ScrollSpyNav,
 } from "@/components";
 import { Fragment } from "react/jsx-runtime";
 
@@ -17,6 +18,8 @@ export default function Main() {
         <ContactSection />
       </main>
       <Footer />
+
+      <ScrollSpyNav />
     </Fragment>
   );
 }

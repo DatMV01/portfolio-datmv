@@ -1,4 +1,4 @@
-import { Container, TextLogo, ThemeSwitch } from "@/components";
+import { Container, TextLogo, ThemeSwitch, TopNav } from "@/components";
 import Image from "next/image";
 import Link from "next/link";
 import { assets } from "@/constants";
@@ -25,6 +25,7 @@ const Header = () => {
     >
       <div className="flex h-16 items-center justify-between">
         <LeftHeader />
+        <TopNav   offset={70} />
 
         <ThemeSwitch />
       </div>

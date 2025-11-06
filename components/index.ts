@@ -15,6 +15,9 @@ import AboutSection from "./sections/about/AboutSection";
 import ContactSection from "./sections/contact/ContactSection";
 import ProjectSection from "./sections/projects/ProjectSection";
 
+import TopNav from "./nav/TopNav";
+import ScrollSpyNav from "./nav/ScrollSpyNav";
+
 export {
   Switch,
   TextLogo,
@@ -28,4 +31,6 @@ export {
   AboutSection,
   ContactSection,
   ProjectSection,
+  TopNav,
+  ScrollSpyNav,
 };
