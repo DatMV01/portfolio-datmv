@@ -1,7 +1,7 @@
 "use client";
 
+import { NavItem } from "@/types";
 import clsx from "clsx";
-import { NavItem } from "./NavItem";
 import Link from "next/link";
 
 interface Props {
@@ -39,11 +39,7 @@ const NavLi = ({
         className
       )}
     >
-      <Link
-        onClick={handleClick}
-        href={`#${item.id}`}
-        className="block"
-      >
+      <Link onClick={handleClick} href={`#${item.id}`} className="block">
         {showIcon ? item.icon : item.title}
       </Link>
     </li>

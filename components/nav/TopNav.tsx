@@ -4,8 +4,8 @@ import React from "react";
 import clsx from "clsx";
 import { useScrollSpy } from "@/hooks/useScrollSpy";
 import NavLi from "./NavLi";
-import { NavItem } from "./NavItem";
-import NavData from "./NavData";
+ import NavData from "./NavData";
+import { NavItem } from "@/types";
 
 interface Props {
   items?: NavItem[];

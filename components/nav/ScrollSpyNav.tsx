@@ -3,8 +3,8 @@
 import { useScrollSpy } from "@/hooks";
 import clsx from "clsx";
 import NavLi from "./NavLi";
-import { NavItem } from "./NavItem";
-import NavData from "./NavData";
+ import NavData from "./NavData";
+import { NavItem } from "@/types";
 
 export interface Props {
   items?: NavItem[];

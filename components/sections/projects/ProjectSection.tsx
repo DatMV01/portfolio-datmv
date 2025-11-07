@@ -13,7 +13,7 @@ const ProjectSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        await new Promise((resolve) => setTimeout(resolve, 300));
+        await new Promise((resolve) => setTimeout(resolve, 500));
         setProjects(projectData);
       } finally {
         setLoading(false);
@@ -33,7 +33,7 @@ const ProjectSection = () => {
 
     setProjects(filterProjects);
 
-    await new Promise((resolve) => setTimeout(resolve, 300));
+    await new Promise((resolve) => setTimeout(resolve, 500));
     setLoading(false);
   };
 

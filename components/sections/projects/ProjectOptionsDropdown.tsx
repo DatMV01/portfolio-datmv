@@ -59,7 +59,7 @@ const ProjectOptionsDropdown = ({
       <ul
         className={clsx(
           "border-border bg-background absolute z-10 mt-2 w-full rounded border shadow-lg",
-          "max-h-50 overflow-y-scroll",
+          "max-h-50 overflow-y-auto",
           "origin-top transform transition-all duration-500 ease-out",
           open
             ? "opacity-100 scale-100 translate-y-0"

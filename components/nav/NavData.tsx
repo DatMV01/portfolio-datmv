@@ -1,27 +1,25 @@
-import { FaRegUserCircle } from "react-icons/fa";
-import { FiHome } from "react-icons/fi";
+import { FiUser } from "react-icons/fi";
 import { LuContact } from "react-icons/lu";
-import { MdWorkOutline } from "react-icons/md";
-import { NavItem } from "./NavItem";
+import { MdOutlineWorkOutline } from "react-icons/md";
 
-const NavData: NavItem[] = [
-  {
-    id: "home",
-    link: "#home",
-    title: "Home",
-    icon: <FiHome className="h-7 w-7" />,
-  },
+const NavData = [
+  // {
+  //   id: "home",
+  //   link: "#home",
+  //   title: "Home",
+  //   icon: <FiHome className="h-7 w-7" />,
+  // },
   {
     id: "about",
     link: "#about",
     title: "About",
-    icon: <FaRegUserCircle className="h-7 w-7" />,
+    icon: <FiUser className="h-7 w-7" />,
   },
   {
     id: "projects",
     link: "#projects",
     title: "Projects",
-    icon: <MdWorkOutline className="h-7 w-7" />,
+    icon: <MdOutlineWorkOutline className="h-7 w-7" />,
   },
   {
     id: "contact",
