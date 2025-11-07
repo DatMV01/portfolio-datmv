@@ -62,14 +62,13 @@ const AboutSection = () => {
   return (
     <Container
       as="section"
-      className="min-h-screen flex flex-col justify-center items-center"
+      className="min-h-screen flex flex-col gap-4 justify-center items-center"
       id="about"
     >
-      <h2 className="text-3xl">About me</h2>
+      <h2 className="text-3xl md:text-4xl">About me</h2>
 
-      <h3 className="mb-4 flex items-center justify-center gap-2 text-xl md:text-2xl">
-        <span>Hi! I&apos;m Dat Mai</span>
-        <Image src={assets.icons.handClap} alt="Hand icon" className="w-6" />
+      <h3 className=" gap-2 text-3xl md:text-4xl">
+        <span>Hi! I&apos;m Dat Mai 👋</span>
       </h3>
 
       <div className="grid grid-cols-1 md:grid-cols-2 ">
