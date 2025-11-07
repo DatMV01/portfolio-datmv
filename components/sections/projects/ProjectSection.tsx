@@ -2,32 +2,39 @@
 
 import { Container, Spinner } from "@/components";
 import { categoryOptions, projects as projectData } from "@/constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProjectList from "./ProjectList";
 import ProjectOptionsDropdown from "./ProjectOptionsDropdown";
-import { fail } from "node:assert";
 
 const ProjectSection = () => {
-  const [projects, setProjects] = useState(projectData);
+  const [projects, setProjects] = useState<any>();
   const [loading, setLoading] = useState(true);
 
-  const filterProjectsHandler = (category: string) => {
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        await new Promise((resolve) => setTimeout(resolve, 300));
+        setProjects(projectData);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const filterProjectsHandler = async (category: string) => {
     setLoading(true);
 
-    setTimeout(() => {
-      setLoading(false);
-    }, 300);
-
-    if (category === "All") {
-      setProjects(projectData);
-      return;
-    }
-
-    const filterProjects = projectData.filter(
-      (project) => project.category === category
-    );
+    const filterProjects =
+      category === "All"
+        ? projectData
+        : projectData.filter((p) => p.category === category);
 
     setProjects(filterProjects);
+
+    await new Promise((resolve) => setTimeout(resolve, 300));
+    setLoading(false);
   };
 
   return (
@@ -49,7 +56,7 @@ const ProjectSection = () => {
       />
 
       <div
-        className={` flex-1 w-full h-full justify-center ${loading && "items-center"}`}
+        className={` flex-1 w-full h-full justify-center flex ${loading && "items-center"}`}
       >
         {loading ? <Spinner /> : <ProjectList projectList={projects} />}
       </div>
