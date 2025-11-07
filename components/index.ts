@@ -3,6 +3,7 @@ import TestScrollAnimation from "./shared/TestScrollAnimation";
 import Switch from "./ui/Switch";
 import TextLogo from "./ui/TextLogo";
 import Card from "./ui/Card";
+import Spinner from "./ui/Spinner/Spinner";
 
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
@@ -23,6 +24,7 @@ export {
   Switch,
   TextLogo,
   Card,
+  Spinner,
   TestScrollAnimation,
   ThemeButton,
   ThemeSwitch,

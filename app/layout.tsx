@@ -15,20 +15,34 @@ const ovo = Ovo({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "Clean and modular Next.js starter project",
-  keywords: ["Next.js", "React", "SEO", "App Router"],
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://myapp.com",
-    siteName: "MyApp",
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@myapp",
-    creator: "@myapp",
-  },
+  title: "DatMai - Portfolio",
+  description: "DatMai - Portfolio",
+  keywords: [
+    "DatMai",
+    "DatMV",
+    "Portfolio",
+    "Web Developer",
+    "Frontend Developer",
+    "Fullstack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Next.js App Router",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "NestJS",
+    "MongoDB",
+    "MySQL",
+    "SEO Optimization",
+    "UI/UX Design",
+    "Tailwind CSS",
+    "Personal Website",
+    "DatMai Portfolio",
+    "Developer Portfolio",
+    "Software Engineer",
+  ],
 };
 
 export default function RootLayout({
