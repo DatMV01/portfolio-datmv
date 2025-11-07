@@ -1,4 +1,6 @@
+import cvData from "@/features/cv/constants/cvData";
 import assets from "./assets";
-import { projects, categories, categoryOptions } from "./projectData";
+import { categories, categoryOptions, projects } from "./projectData";
 
-export { assets, projects, categories, categoryOptions };
+export { assets, categories, categoryOptions, cvData, projects };
+

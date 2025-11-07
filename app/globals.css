@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "../features/theme/styles/theme.css";
 @import "../styles/animate.css";
+@import "../features/cv/styles/style.css";
 
 @theme inline {
   --font-sans: var(--font-geist-sans);
